@@ -12,7 +12,7 @@ import Link from "next/link";
 const GridImages: React.FunctionComponent = () => {
   return (
     <>
-      <h1 className="text-center text-3xl md:text-5xl pt-4 mt-4 font-bold ">
+      <h1 className="text-center text-3xl md:text-5xl pt-4 mt-10 font-bold ">
         FIND THE PERFECT FIT
       </h1>
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">

@@ -12,7 +12,7 @@ export default function Home() {
         <GridImages />
         <ContactUs />
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center mt-10  bg-slate-600 p-4" >
         <div className="container mx-auto text-center text-sm">
           &copy; 2025&nbsp;
           <span className="font-semibold">Sai Optical Express. </span>

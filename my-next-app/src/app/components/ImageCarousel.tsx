@@ -33,7 +33,7 @@ const ImageCarousel = () => {
   if (!mounted) return null;
 
   return (
-    <div className="relative rounded-lg h-[300px] md:h-[500px] mb-10  mt-14">
+    <div className="relative rounded-lg h-[300px] md:h-[500px] mb-10  mt-14 w-screen">
       {images.map((img, index) => (
         <div
           key={index}
@@ -57,13 +57,13 @@ const ImageCarousel = () => {
 
       <button
         onClick={prevSlide}
-        className="absolute bottom-4 right-4 bg-white/10 hover:bg-white/20 p-2 rounded-full z-10"
+        className="absolute bottom-4 left-4 bg-white/10 hover:bg-white/20 p-2 rounded-full z-10"
       >
         ←
       </button>
       <button
         onClick={nextSlide}
-        className="absolute bottom-4 left-4  bg-white/10 hover:bg-white/20 p-2 rounded-full z-10"
+        className="absolute bottom-4 right-4  bg-white/10 hover:bg-white/20 p-2 rounded-full z-10"
       >
         →
       </button>

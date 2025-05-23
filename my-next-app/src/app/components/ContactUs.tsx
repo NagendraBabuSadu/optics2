@@ -2,7 +2,7 @@ import { Box, Card, CardContent, Typography } from "@mui/material";
 import Image from "next/image";
 import EmailIcon from "@mui/icons-material/Email";
 import CallIcon from "@mui/icons-material/Call";
-import saiOpticsShop from "../../../public/images/saiOpticsShop.png"
+import saiOpticsShop from "../../../public/images/saiOpticsShop.png";
 
 export default function ContactUs() {
   return (
@@ -134,7 +134,7 @@ export default function ContactUs() {
             fontSize={{ xs: "2rem", sm: "2.5rem", md: "3rem" }}
             textAlign="center"
           >
-            Locate Us:
+            You can Find Us Here
           </Typography>
 
           <Box
