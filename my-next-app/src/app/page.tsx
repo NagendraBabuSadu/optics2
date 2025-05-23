@@ -1,3 +1,4 @@
+import ContactUs from "./components/ContactUs";
 import Content from "./components/Content";
 import GridImages from "./components/GridImages";
 import ImageCarousel from "./components/ImageCarousel";
@@ -9,7 +10,7 @@ export default function Home() {
         <ImageCarousel />
         <Content />
         <GridImages />
-        
+        <ContactUs />
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <div className="container mx-auto text-center text-sm">
