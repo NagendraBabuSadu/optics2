@@ -1,4 +1,5 @@
 import Content from "./components/Content";
+import GridImages from "./components/GridImages";
 import ImageCarousel from "./components/ImageCarousel";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <main className="flex flex-col gap-[12px] items-center justify-center">
         <ImageCarousel />
         <Content />
+        <GridImages />
         
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
