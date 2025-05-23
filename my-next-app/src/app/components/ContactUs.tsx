@@ -39,7 +39,7 @@ export default function ContactUs() {
             fontSize={{ xs: "1.1rem", sm: "1.3rem", md: "1.5rem" }}
             m="1rem 1rem"
           >
-            Call me anytime between 10am - 8pm
+            Call me anytime between 9:30am - 10pm
           </Typography>
         </div>
 
@@ -47,11 +47,16 @@ export default function ContactUs() {
           sx={{
             display: "grid",
             placeItems: "center",
-            gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" },
-            gap: { xs: 3, sm: 3 },
+            gridTemplateColumns: {
+              xs: "1fr", // 1 column on extra-small
+              sm: "1fr", // 1 column on small
+              md: "1fr", // 1 column on medium
+              lg: "repeat(2, 1fr)", // 3 columns on large screens and up
+            },
+            gap: { xs: 3, sm: 3, lg: 3 },
             width: "100%",
-            maxWidth: "800px",
-            px: { xs: 2, sm: 4 },
+            maxWidth: "1200px",
+            px: { xs: 2, sm: 4, lg: 3 },
           }}
         >
           <Card
@@ -61,8 +66,11 @@ export default function ContactUs() {
               display: "flex",
               flexDirection: "row",
               p: "1rem",
-              boxShadow: "0px 0px 3px 2px ",
+              boxShadow: "0px 0px 6px 2px ",
               transition: "all ease 1s",
+              width: "100%", // was: maxWidth
+
+              justifyContent: "center",
             }}
             className="contactCard"
           >
@@ -95,10 +103,13 @@ export default function ContactUs() {
               p: "1rem",
               boxShadow: "0px 0px 6px 2px ",
               transition: "all ease 1s",
+              width: "100%", // was: maxWidth
+
+              justifyContent: "center",
             }}
             className="contactCard"
           >
-            <CardContent component="a" href="tel:+919000848795">
+            <CardContent component="a" href="tel:+918919776375">
               <CallIcon
                 sx={{
                   fontSize: { xs: "4rem", sm: "6rem", md: "8rem" },
@@ -113,10 +124,11 @@ export default function ContactUs() {
                   fontSize: { xs: "1rem", md: "1.3rem" },
                 }}
               >
-                +91 90008 48795
+                +91 89197 76375
               </Typography>
             </CardContent>
           </Card>
+         
         </Box>
 
         <Box
@@ -177,6 +189,7 @@ export default function ContactUs() {
             </Box>
           </Box>
         </Box>
+        
       </Box>
     </div>
   );
