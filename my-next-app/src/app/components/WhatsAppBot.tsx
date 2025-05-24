@@ -17,7 +17,7 @@ const WhatsAppBot: React.FunctionComponent = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
       {showMessage && (
-        <div className="bg-white text-black p-2 rounded-lg shadow-md text-sm animate-fade-in">
+        <div className="bg-green-900 text-white p-2 rounded-lg shadow-md text-sm animate-fade-in">
           Hi there, WhatsApp me!
         </div>
       )}
