@@ -51,7 +51,7 @@ export default function ContactUs() {
               xs: "1fr", // 1 column on extra-small
               sm: "1fr", // 1 column on small
               md: "1fr", // 1 column on medium
-              lg: "repeat(2, 1fr)", // 3 columns on large screens and up
+              lg: "repeat(3, 1fr)", // 3 columns on large screens and up
             },
             gap: { xs: 3, sm: 3, lg: 3 },
             width: "100%",
@@ -128,7 +128,40 @@ export default function ContactUs() {
               </Typography>
             </CardContent>
           </Card>
-         
+          <Card
+            sx={{
+              maxWidth: { xs: 320, sm: 345 },
+              backgroundColor: "#fff",
+              display: "flex",
+              flexDirection: "row",
+              p: "1rem",
+              boxShadow: "0px 0px 6px 2px ",
+              transition: "all ease 1s",
+              width: "100%", // was: maxWidth
+
+              justifyContent: "center",
+            }}
+            className="contactCard"
+          >
+            <CardContent component="a" href="tel:+919177215723">
+              <CallIcon
+                sx={{
+                  fontSize: { xs: "4rem", sm: "6rem", md: "8rem" },
+                  color: "red",
+                }}
+              />
+
+              <Typography
+                variant="h4"
+                sx={{
+                  color: "blue",
+                  fontSize: { xs: "1rem", md: "1.3rem" },
+                }}
+              >
+               +91 91772 15723
+              </Typography>
+            </CardContent>
+          </Card>
         </Box>
 
         <Box
